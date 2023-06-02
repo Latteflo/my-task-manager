@@ -1,21 +1,20 @@
 // MY TASK MANAGER - TERMINAL
 
 // SETUP CODE
-const fs = require('fs');
-const readline = require('readline');
-var rl = readline.createInterface(process.stdin, process.stdout);
+const fs = require("fs")
+const readline = require("readline")
+var rl = readline.createInterface(process.stdin, process.stdout)
 
-let tasks = ["task1", "task2", "task3"]
-
-
-const showtasks = () => {
-    console.log(tasks)
+const showTasks = () => {
+  console.log(tasks)
 }
 
-showtasks()
 
-// EXEMPLE
-// rl.question('What is your age? ', (age) => {
-//     console.log('Your age is: ' + age);
-//     rl.close();
-// });
+console.log(
+  "Welcome to your task manager, Press: \n1. to see all your tasks;\n2. to add a task;\n3. to delete a task;\n4. to Exit the task manager"
+)
+
+
+rl.question("Pick a number", (numberOfChoice) => {
+
+})
