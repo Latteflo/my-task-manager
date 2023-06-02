@@ -50,17 +50,3 @@ Bonus: Save the list of tasks on the file system and reload it each time we laun
 hint => maybe using a .json file ;)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
->>>>>>> mybranch
