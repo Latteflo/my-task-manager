@@ -5,6 +5,8 @@ const fs = require("fs")
 const readline = require("readline")
 var rl = readline.createInterface(process.stdin, process.stdout)
 
+let tasks = ["Buy milk", "Shower", "Practice JS", "Take over the world!"];
+
 const showTasks = () => {
   console.log(tasks)
 }
@@ -15,6 +17,12 @@ console.log(
 )
 
 
-rl.question("Pick a number", (numberOfChoice) => {
-
+rl.question("Pick a number", (number) => {
+  switch (number) {
+    case "1":
+      console.log("Your tasks are:")
+      showTasks()
+      break
+  
+  }
 })
