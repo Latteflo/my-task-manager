@@ -18,10 +18,12 @@ const showTasks = () => {
 
 const addTask = (task) => {
   tasks.push(task)
+  saveTasks()
 }
 
 const deleteTask = (taskIndex) => {
   tasks.splice(taskIndex, 1)
+  saveTasks()
 }
 
 /////////////////Solution with switchcase////////////////////////////
@@ -92,3 +94,17 @@ rl.question("Pick a number", (number) => {
     }
   })
   
+
+
+  ////////////////////////Saving the tasks in a Json file //////////////////////////////
+
+try {
+    const data = fs.readFileSync('tasks.json', 'utf8');
+    tasks = JSON.parse(data);
+} catch (error) {
+    console.log("No existing tasks found.");
+}
+
+const saveTasks = () => {
+    fs.writeFileSync('tasks.json', JSON.stringify(tasks));
+}
