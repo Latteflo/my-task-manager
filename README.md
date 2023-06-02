@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-# my-task-manager
-=======
+
 # My Task Manager - Terminal
 - Repository: `my-task-manager`
 - Type of Challenge: `consolidation challenge`
@@ -51,19 +49,6 @@ Each time one of the action has been performed it should return to the menu. (Ex
 Bonus: Save the list of tasks on the file system and reload it each time we launch the application.
 hint => maybe using a .json file ;)
 
-
-## Advices
-
-- Try to divide this challenge in multiple small functions. And work on it one at the time. If you try to do everything in one it will feel very complicated.
-
-- You'll be paired in team of 2. try to come up with a plan together, do some pair coding and use the strength of each other to manage thiis challenge!
-
-
-
-
-
-You can do it everybody!
-![](https://media.giphy.com/media/8I3eD4CkqLOdMh70ko/giphy.gif)
 
 
 
