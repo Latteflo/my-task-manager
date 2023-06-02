@@ -11,6 +11,10 @@ const showTasks = () => {
   console.log(tasks)
 }
 
+const addTask = (task) => {
+  tasks.push(task)
+}
+
 
 console.log(
   "Welcome to your task manager, Press: \n1. to see all your tasks;\n2. to add a task;\n3. to delete a task;\n4. to Exit the task manager"
@@ -23,6 +27,13 @@ rl.question("Pick a number", (number) => {
       console.log("Your tasks are:")
       showTasks()
       break
-  
+    case "2":
+      rl.question("Enter a task to add: ", (task) => {
+        addTask(task)
+        console.log("Your tasks after adding are:")
+        showTasks()
+        rl.close()
+      })
+      break
   }
 })
