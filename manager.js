@@ -96,7 +96,7 @@ rl.question("Pick a number", (number) => {
   
 
 
-  ////////////////////////Saving the taks in a Json file //////////////////////////////
+  ////////////////////////Saving the tasks in a Json file //////////////////////////////
 
 try {
     const data = fs.readFileSync('tasks.json', 'utf8');
