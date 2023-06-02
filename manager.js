@@ -26,38 +26,38 @@ const deleteTask = (taskIndex) => {
 
 /////////////////Solution with switchcase////////////////////////////
 
-rl.question("Pick a number", (number) => {
-  switch (number) {
-    case "1":
-      console.log("Your tasks are:")
-      showTasks()
-      break
-    case "2":
-      rl.question("Enter a task to add: ", (task) => {
-        addTask(task)
-        console.log("Your tasks after adding are:")
-        showTasks()
-        rl.close()
-      })
-      break
-    case "3":
-      rl.question("Enter the index of the task to delete: ", (index) => {
-        deleteTask(index)
-        console.log("Your tasks after deletion are:")
-        showTasks()
-        rl.close()
-      })
-      break
-    case "4":
-      console.log("Exiting task manager...")
-      rl.close()
-      break
-    default:
-      console.log("Invalid choice, please enter a number between 1 and 4.")
-      rl.close()
-      break
-  }
-})
+//rl.question("Pick a number", (number) => {
+//  switch (number) {
+//    case "1":
+//      console.log("Your tasks are:")
+//      showTasks()
+//      break
+//    case "2":
+//      rl.question("Enter a task to add: ", (task) => {
+//        addTask(task)
+//        console.log("Your tasks after adding are:")
+//        showTasks()
+//        rl.close()
+//      })
+//      break
+//    case "3":
+//      rl.question("Enter the index of the task to delete: ", (index) => {
+//        deleteTask(index)
+//        console.log("Your tasks after deletion are:")
+//        showTasks()
+//        rl.close()
+//      })
+//      break
+//    case "4":
+//      console.log("Exiting task manager...")
+//      rl.close()
+//      break
+//    default:
+//      console.log("Invalid choice, please enter a number between 1 and 4.")
+//      rl.close()
+//      break
+//  }
+//})
 
 /////////////////Solution with if-else ////////////////////////
 
@@ -73,7 +73,7 @@ rl.question("Pick a number", (number) => {
           showTasks()
           rl.close()
         })
-    }
+     }
     else if (number === "3"){
         rl.question("Enter the index of the task to delete: ", (index) => {
           deleteTask(index)
