@@ -6,10 +6,6 @@
 
 ## Mission objectives
 
-Hello hello hello Everybody!
-In this consolidation challenge you are tasked of creating a task manager nested in your terminal.
-What does it mean?
-
 using the file "manager.js" provided in this repo,
 you can run  :
 ```js
@@ -45,8 +41,7 @@ Each time one of the action has been performed it should return to the menu. (Ex
 
 
 ## Bonus
+Save the list of tasks on the file system and reload it each time we launch the application.
 
-Bonus: Save the list of tasks on the file system and reload it each time we launch the application.
-hint => maybe using a .json file ;)
 
 
